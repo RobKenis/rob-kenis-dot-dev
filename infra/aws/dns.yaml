@@ -1,0 +1,12 @@
+---
+Description: DNS for robkenis.dev
+Resources:
+  zone:
+    Type: "AWS::Route53::HostedZone"
+    Properties:
+      HostedZoneConfig:
+        Comment: !Sub 'Created in ${AWS::StackName}'
+      Name: 'robkenis.dev'
+      HostedZoneTags:
+        - Key: 'project'
+          Value: 'rob-kenis-dot-dev'
