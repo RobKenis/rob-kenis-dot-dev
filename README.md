@@ -1,5 +1,7 @@
 # Hello :rocket:
 
+[![Validate](https://github.com/RobKenis/rob-kenis-dot-dev/actions/workflows/validate.yaml/badge.svg)](https://github.com/RobKenis/rob-kenis-dot-dev/actions/workflows/validate.yaml)
+
 ## What's inside?
 
 This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
