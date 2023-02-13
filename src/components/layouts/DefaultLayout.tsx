@@ -1,4 +1,4 @@
-import {Container, Navbar, Switch, Text, useTheme} from "@nextui-org/react";
+import {Container, Link, Navbar, Switch, Text, useTheme} from "@nextui-org/react";
 import {Logo} from "@/components/Logo";
 import {useTheme as useNextTheme} from "next-themes";
 
@@ -7,11 +7,26 @@ interface DefaultLayoutProps {
 }
 
 export default function Layout({children}: DefaultLayoutProps) {
+    const navigationItems = [{
+        title: 'Home',
+        href: '/'
+    }, {
+        title: 'Blog',
+        href: '/'
+    }, {
+        title: 'Learn',
+        href: '/'
+    }, {
+        title: 'About Me',
+        href: '/'
+    }];
+
     const {setTheme} = useNextTheme();
     const {isDark, type} = useTheme();
     return (
         <>
             <Navbar>
+                <Navbar.Toggle showIn="xs"/>
                 <Navbar.Brand>
                     <Logo/>
                     <Text b color="inherit" hideIn="xs">
@@ -19,9 +34,8 @@ export default function Layout({children}: DefaultLayoutProps) {
                     </Text>
                 </Navbar.Brand>
                 <Navbar.Content hideIn="xs">
-                    <Navbar.Link href="#">Blog</Navbar.Link>
-                    <Navbar.Link href="#">Learn</Navbar.Link>
-                    <Navbar.Link href="#">About Me</Navbar.Link>
+                    {navigationItems.map(item => (
+                        <Navbar.Link key={item.title} href={item.href}>{item.title}</Navbar.Link>))}
                 </Navbar.Content>
                 <Navbar.Content>
                     <Switch
@@ -29,8 +43,13 @@ export default function Layout({children}: DefaultLayoutProps) {
                         onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                     />
                 </Navbar.Content>
+                <Navbar.Collapse>
+                    {navigationItems.map(item => (<Navbar.CollapseItem key={item.title}>
+                        <Link color="inherit" href={item.href}>{item.title}</Link>
+                    </Navbar.CollapseItem>))}
+                </Navbar.Collapse>
             </Navbar>
-            <Container justify={"space-around"}>
+            <Container justify={"space-around"} lg>
                 {children}
             </Container>
         </>
