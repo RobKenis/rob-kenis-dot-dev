@@ -28,7 +28,7 @@ export default function Home() {
         <Grid.Container gap={2} justify="flex-start">
             {list.map((item, index) => (
                 <Grid xs={6} sm={6} md={4} lg={4} xl={4} key={index}>
-                    <Card isPressable>
+                    <Card>
                         <Card.Body css={{p: 0}}>
                             <Card.Image
                                 src={"https://nextui.org" + item.img}
