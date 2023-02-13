@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <Grid.Container gap={2} justify="flex-start">
             {list.map((item, index) => (
-                <Grid xs={6} sm={3} key={index}>
+                <Grid xs={6} sm={6} md={4} lg={4} xl={4} key={index}>
                     <Card isPressable>
                         <Card.Body css={{p: 0}}>
                             <Card.Image
