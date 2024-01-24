@@ -38,3 +38,12 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RobKenis
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/RobKenis
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/robkenis/
