@@ -1,0 +1,24 @@
+Description: DNS records for GitHub Pages
+Resources:
+  DNSRecords:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      Comment: DNS records for GitHub Pages
+      HostedZoneName: robkenis.dev.
+      RecordSets:
+        - Name: robkenis.dev
+          ResourceRecords:
+            - 185.199.108.153
+            - 185.199.109.153
+            - 185.199.110.153
+            - 185.199.111.153
+          TTL: '900'
+          Type: A
+        - Name: robkenis.dev
+          ResourceRecords:
+            - 2606:50c0:8000::153
+            - 2606:50c0:8001::153
+            - 2606:50c0:8002::153
+            - 2606:50c0:8003::153
+          TTL: '900'
+          Type: AAAA
