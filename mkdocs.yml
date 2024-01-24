@@ -1,0 +1,40 @@
+site_name: Notes
+repo_url: https://github.com/RobKenis/rob-kenis-dot-dev
+repo_name: RobKenis/rob-kenis-dot-dev
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - termynal:
+      prompt_literal_start:
+        - "$"
+        - ">"
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: .
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tilde
