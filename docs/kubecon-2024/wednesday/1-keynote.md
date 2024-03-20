@@ -33,4 +33,4 @@ ollama list
 ```
 ### Demo
 
-Go to https://github.com/cncf/llm-in-action
+Go to <https://github.com/cncf/llm-in-action>
