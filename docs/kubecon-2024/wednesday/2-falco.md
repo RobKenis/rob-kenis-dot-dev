@@ -18,6 +18,10 @@ this is currently the most overhead.
   - Improvements on 32-bit compiled programs on 64-bit systems
   - Override: Apply modifications of existing rules. Use same name of existing rule and use `override: {}` options.
 
+### Detections
+
+
+
 ### Performance
 
 
@@ -32,7 +36,20 @@ New plugin that provides Kubernetes cluster metadata. Falco talks to the API-ser
 
 Old fields from Core Falco, like `k8s.pod.name` is still there, new ones are added under `k8smeta.pod.name`.
 
+## Ecosystem Projects
+
+### Sidekick
+
+Introducing more outputs, most importantly OTEL Traces and AWS S3.
+`falcoctl` gets new features: flexible mechanism to download drivers instead of a bash script. The new version of the Helm Chart includes metacollector out of the box.
+Use the Chart in combination with `falcoctl` to detect required drivers.
+
+## Roadmap
+
+Falco 1.0.0 has been released.
+
 ## Links
 
 - <https://falco.org/>
 - <https://github.com/falcosecurity/k8s-metacollector>
+- <https://github.com/falcosecurity/falco-playground>
