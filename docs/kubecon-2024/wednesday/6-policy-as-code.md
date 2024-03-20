@@ -46,7 +46,10 @@ Best way to interpret this, is using a graph. You have the entity (the user as a
 - <https://aws.amazon.com/fr/about-aws/whats-new/2023/05/cedar-open-source-language-access-control/>
 - <https://openfga.dev/>
 
+The hard thing is that policies need to be versioned. The good thing about this, is that the policy is reviewed and tested.
+
 ## Links
 
 - <https://www.permit.io/>
 - <https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/>
+- <https://github.com/permitio/opal>
