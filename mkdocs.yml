@@ -10,6 +10,9 @@ plugins:
         - "$"
         - ">"
 
+exclude_docs: |
+  homelab/
+
 theme:
   name: material
   icon:
