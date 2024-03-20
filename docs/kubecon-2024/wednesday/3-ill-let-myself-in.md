@@ -53,3 +53,11 @@ Tester does nasty things in the cluster and works together with developers and a
 
  <https://attack.mitro.org/tactics/TA0003/> is a good start for fun stuff you can do directly on Linux. _Let's ingore serverless and Windows nodes for a second_.
  Once an attacker has root access to a node, they can put stuff in shared storage and then it's really fun!
+
+ ## What to do
+
+ What would you do once you know an attacker has gained access?
+
+ - You can rebuild all infra. But what if the attacker does the exact same thing?
+ - You need to worry about all credentials in the cluster: clouds, databases, external parties..
+   - You need to thread model this thing. What if an admin leaves and can still access these credentials?
