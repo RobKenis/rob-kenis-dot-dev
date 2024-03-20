@@ -44,3 +44,17 @@ What is observability? Goes beyond classic monitoring, in the past (and present)
 Observability builds on this to identity unknown unknowns.
 
 _Here comes the sponsored bit on big-brand-observability-saas-provider_
+
+How does Crossplane help with observability? When defining a composition, include a block to configure options for your observability platform.
+In this case, this is _saas-provider_, but can be whatever you have or selfhost.
+
+Seems like Crossplane also exports metrics, so you can visualize these as well. Metrics seem familiar to ArgoCD metrics.
+
+## Questions
+
+- Why does Crossplane use Terraform under the hood?
+- Is the takeaway to add observability in the compositions so the developers don't have to do it?
+
+## Links 
+
+- <https://github.com/ddosify/ddosify>
