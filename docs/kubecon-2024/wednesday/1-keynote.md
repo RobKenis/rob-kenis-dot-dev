@@ -107,3 +107,12 @@ Scale out clusters need to interconnect thousands of GPUs. To schedule multi-nod
 GPU clusters constantly run at peak performance, so component failures are expected. Failures can lead to throttling or failing. We need to detect faulty components.
 Enable inband and out-of-band GPU monitoring, combined with [kubernetes/node-problem-detector](https://github.com/kubernetes/node-problem-detector) helps detect GPU failures.
 
+## Microsoft
+
+Container images are a great way to distribute applications, but also Models. This makes it easier, but not easy..
+You still need to look at GPU contraints and container scheduling.
+
+### Kubernetes AI Operator Toolchain
+
+[KAITO](https://github.com/Azure/kaito) handles a lot of the hard parts for you and can leverage node provisioners like [Karpenter](https://karpenter.sh/) to provision the right nodes to schedule your workloads.
+KAITO will make your model available over an HTTP API so you can interact with it right away. Get started as <https://aka.ms/KAITO>
