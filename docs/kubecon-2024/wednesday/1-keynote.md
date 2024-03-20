@@ -70,3 +70,24 @@ What can the open source community do? The models don't run in a vaccuum, so we 
 and more into the ML space. The community needs to find patterns that they get with paid services and how to replicate them using
 open source tooling. While we're at it, we need to abstract the hardware. Health checking machines and hardware needs to be handled
 by cloud native community tooling, I don't want my GPU to magically die in production.
+
+## NVIDIA
+
+Accelerating AI Workloads with GPUs in Kubernetes.
+
+### GPUs on Kubernetes
+
+We still have challenges on resource management and topology-aware scheduling.
+
+Host level components: `nvidia-container-toolkit` and `nvidia-gpu-driver` and K8s components like `k8s-device-plugin`. With these features enabled,
+we can assign GPUs to workloads. To ease the deployment, NVIDIA provides a GPU-operator.
+
+There's some techniques to share GPUs between workloads, most of these have been available in Kubernetes for a while, with the exception being Multi-Process Streaming (MPS).
+time-slicing allows running multiple workloads on the same GPU, they alternate in time. MPS  works on partitioning, each workloads gets a fraction of the memory and
+compute of the GPU. Multi-GPU Instance (MIG) does somewhat the same, but partitioning is hardware-based instead of software-based. Virtual GPU (vGPU) vitualizes the GPU
+for sharing, I didn't really get this. CUDA streams is the final option and is the programming option to run multiple workloads on a single GPU from within
+the same application.
+
+<https://developer.nvidia.com/blog/improving-gpu-utilization-in-kubernetes>
+
+Dynamic Resource Allocation is an alpha feature since k8s 1.26, it's a way to claim resources in Pods. <https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/>
