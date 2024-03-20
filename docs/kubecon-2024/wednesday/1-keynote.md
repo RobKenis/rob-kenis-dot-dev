@@ -116,3 +116,12 @@ You still need to look at GPU contraints and container scheduling.
 
 [KAITO](https://github.com/Azure/kaito) handles a lot of the hard parts for you and can leverage node provisioners like [Karpenter](https://karpenter.sh/) to provision the right nodes to schedule your workloads.
 KAITO will make your model available over an HTTP API so you can interact with it right away. Get started as <https://aka.ms/KAITO>
+
+## More platform discussions
+
+How do we make Kubernetes simpler? Kubernets is supposed to be a cluster OS, the job is to abstract hardware. The platform admins only need to expose the details of what the nodes
+can run. We need to bring batch frameworks like Slurm closer to Kubernetes. The focus for production inference workloads needs to be to make it easier to run these workloads on Kubernetes.
+
+## Links
+
+- <https://amperecomputing.com/>
