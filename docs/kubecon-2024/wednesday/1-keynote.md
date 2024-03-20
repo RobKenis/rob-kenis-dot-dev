@@ -31,3 +31,6 @@ Platform teams push approved models into Ollama and make them available for othe
 # Show stored models
 ollama list
 ```
+### Demo
+
+Go to https://github.com/cncf/llm-in-action
