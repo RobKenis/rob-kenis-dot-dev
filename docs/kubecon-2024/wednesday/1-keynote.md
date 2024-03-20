@@ -91,3 +91,19 @@ the same application.
 <https://developer.nvidia.com/blog/improving-gpu-utilization-in-kubernetes>
 
 Dynamic Resource Allocation is an alpha feature since k8s 1.26, it's a way to claim resources in Pods. <https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/>
+
+#### NVIDIA Picasso
+
+Seems like a dope model for computer vision.
+
+To reliably run shared workloads across a shared-GPU cluster, we need to do some things in Kubernetes. There's some open source tooling to 
+enhance scheduling, but these don't support GPUs yet.
+
+Scale out clusters need to interconnect thousands of GPUs. To schedule multi-node jobs, you need to be aware of 2 things:
+
+- Optimal placement
+- Bin packing nodes
+
+GPU clusters constantly run at peak performance, so component failures are expected. Failures can lead to throttling or failing. We need to detect faulty components.
+Enable inband and out-of-band GPU monitoring, combined with [kubernetes/node-problem-detector](https://github.com/kubernetes/node-problem-detector) helps detect GPU failures.
+
