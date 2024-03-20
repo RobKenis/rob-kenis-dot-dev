@@ -56,3 +56,17 @@ What are the scaling constraints? Demand for all sizes will grow, going from edg
 discovering workloads and picking the right sizing and pricing. Meanwhile, chip makers are building hardware which is better
 suited for the workload. Contraints are built by use cases: code completion models have to be small and fast, but some larger models
 can be slower. This causes the challenge to decide between scaling and efficiency.
+
+### Open Source
+
+Customers are using Open Source models and are distributing them to their own customers. How do we license models so
+you don't have to break them open to see how it works? Tools like PyTorch and compilers are Open Source and should stay
+that way, would we a shame if we have to switch hardware because a part in the toolchain become closed source.
+
+Hot take from Google: We should make the models and compilers open source. The only way to understand what some models can do, is 
+to see people push the models to its boundaries.
+
+What can the open source community do? The models don't run in a vaccuum, so we need to find a way to bring observability, scaling, security
+and more into the ML space. The community needs to find patterns that they get with paid services and how to replicate them using
+open source tooling. While we're at it, we need to abstract the hardware. Health checking machines and hardware needs to be handled
+by cloud native community tooling, I don't want my GPU to magically die in production.
