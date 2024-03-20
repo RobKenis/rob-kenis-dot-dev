@@ -32,3 +32,24 @@ Tester does nasty things in the cluster and works together with developers and a
  a common misconfiguration is `secret:Get` vs `secret:List`. If you know the name of a secret, you can mount it in to a Pod and retrieve the value.
 
  Pro tip: Don't hand out `RBAC *` permissions, it's a shortcut to getting cluster admin permissions.
+
+ TIL: You can create a RoleBinding on a ClusterRole. The Subject will get all the ClusterRole permissions, but only in the current namespace.
+
+ Assigning `*:*` to a policy gives the workload permissions to update labels on the namespace. This is horrible because security tooling relies on
+ labels on a namespace.
+
+ ## Post-Compromise Activities
+
+ Hide my tracks: disable auditing, monitoring and logging. When logs are streamed to an external source (by hostname), change the value for that host in `/etc/hosts` to
+ something else so the logs go nowhere. Some admin endpoints are not audited by default, for example talking directly to kubelet.
+
+ ## Attacker Eviction
+
+ Can you get rid of an attacker? No, not with any degree of certainty. Unless you can lock down the cluster and everything it touches. Once someone has cluster
+ access, they can mend user certificates, access nodes directly, talk directly to etcd. You can create workloads in `/etc/manifests`, or create processes directly
+ on the node.
+
+ ### Linux
+
+ <https://attack.mitro.org/tactics/TA0003/> is a good start for fun stuff you can do directly on Linux. _Let's ingore serverless and Windows nodes for a second_.
+ Once an attacker has root access to a node, they can put stuff in shared storage and then it's really fun!
