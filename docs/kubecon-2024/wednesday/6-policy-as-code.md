@@ -33,6 +33,19 @@ _owner_ or _viewer_ of a resource, which impacts the actions I can execute on it
 
 Best way to interpret this, is using a graph. You have the entity (the user as a node), the resouce (a file as a node) and the relationship (the action on the edge).
 
+## Authorization best practices
+
+- Agnostic to the permission model: RBAC or ABAC or relationships, doesn't matter
+- Decouple policy from code
+- Support the whole stack: the frontend, backend, database..
+- Performance and monitoring features
+
+## Decoupling
+
+- <https://www.openpolicyagent.org/>
+- <https://aws.amazon.com/fr/about-aws/whats-new/2023/05/cedar-open-source-language-access-control/>
+- <https://openfga.dev/>
+
 ## Links
 
 - <https://www.permit.io/>
