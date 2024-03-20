@@ -8,22 +8,22 @@ Since 2024, Falco is a CNCF graduated project.
 
 - Rules Maturity
 - Plugins and Integrations
-- Performance and Security: Let's say we want to monitor 26M system calls per second. There are 3 Kernel Driver Options: Kernel Module, eBPF and Moder eBPF (CO-RE). The Kernel
+- Performance and Security
+- Detections
+
+### Detections
+
+- Symlink resolution: Falco no longer follows symlinks, but shows the name of the process instead of the symlinked process
+- Improvements on 32-bit compiled programs on 64-bit systems
+- Override: Apply modifications of existing rules. Use same name of existing rule and use `override: {}` options.
+
+### Performance
+
+Let's say we want to monitor 26M system calls per second. There are 3 Kernel Driver Options: Kernel Module, eBPF and Moder eBPF (CO-RE). The Kernel
 Module is the most performant option, but is harder to manage. The eBPF modules work for every kernel and distribution and are easier to manage. Sending events from kernel space to user
 space happens through buffers. If any of these buffers is full, the new events are lost forever. For newer drivers, you can share buffers across CPUs. In newer versions of Falco,
 there's more precise control over monitored syscalls. Whenever a non-interesting call triggers, the process is immediately ignored. The events are ordered when entering the buffer,
 this is currently the most overhead. 
-- Detections:
-  - Symlink resolution: Falco no longer follows symlinks, but shows the name of the process instead of the symlinked process
-  - Improvements on 32-bit compiled programs on 64-bit systems
-  - Override: Apply modifications of existing rules. Use same name of existing rule and use `override: {}` options.
-
-### Detections
-
-
-
-### Performance
-
 
 ### Benchmarking
 
