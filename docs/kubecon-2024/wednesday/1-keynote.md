@@ -34,3 +34,25 @@ ollama list
 ### Demo
 
 Go to <https://github.com/cncf/llm-in-action>
+
+## The landscape
+
+[CNCF AI Whitepaper](http://cncf.io/reports/cloud-native-artificial-intelligence-whitepaper)
+
+## The conversation
+
+Ollama was designed in a way that we already know coming from Kubernetes and Docker. They've worked
+to build tooling that works for both developers and ops. 
+15 years ago, developing in ML worked, but the landscape for deploying was completely different, no one
+was thinking about containers or Docker.
+
+During training of models, contstraints for the workloads differ from resource requirements to latency requirements
+and it poses a hard challenge to make this work.
+
+There's 3 workloads: training (with shared resources between developers), inference (which looks like training, but on
+smaller resources, and then a workload I missed (finetuning apparently).
+
+What are the scaling constraints? Demand for all sizes will grow, going from edge to multiple nodes. Developers are still
+discovering workloads and picking the right sizing and pricing. Meanwhile, chip makers are building hardware which is better
+suited for the workload. Contraints are built by use cases: code completion models have to be small and fast, but some larger models
+can be slower. This causes the challenge to decide between scaling and efficiency.
