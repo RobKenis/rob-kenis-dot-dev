@@ -46,6 +46,18 @@ First, we need to understand why we are using eBPF for observability. Stages of 
 2. Auto-instrumentation. Enables some visibility with one command, this allows us to troubleshoot incidents, but is still a low maintenance solution.
 3. Maturity. More business-specific instrumentation.
 
+#### Solutions
+
+eBPF can be a drop-in for _cadvisor_ in combination with _kube-prometheus_, which removes the overhead of maintaining those tools. The next step is
+to apply some filtering, you can achieve this by adding `selectors.matchArgs` configuration to the _TracingPolicy_ spec. Tetragon can
+collect the _userStackTrace_ when a program is segfaulting, so it is possible to filter on only events that include the stack trace.
+
+Very often, traffic is observed by using a Service Mesh. External traffic needs more attention, since this is leaving the cluster (or server whatever), and
+this is important for security and cost reasons, especially on SaaS environments. This can be achieved by using the `NotDAddr` operator on the `tcp_sendmsg` kprobe.
+
+And finally, we can reduce the amount of data by aggregation. First, collect the metrics in the instrumentation (e.g. eBPF) and aggregate them before collecting them,
+the aggragation can be done based on Kubernetes metadata, for example container id or pod name or namespace.
+
 ## Links
 
 - <https://px.dev/>
