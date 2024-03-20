@@ -46,7 +46,7 @@ Use the Chart in combination with `falcoctl` to detect required drivers.
 
 ## Roadmap
 
-Falco 1.0.0 has been released.
+Falco 1.0.0 has been released, _Modern eBPF_ has been made the default driver.
 
 ## Links
 
