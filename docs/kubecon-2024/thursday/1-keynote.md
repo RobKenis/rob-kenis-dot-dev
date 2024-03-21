@@ -48,3 +48,7 @@ but this comes with an impact. Deutsche Bahn started the green initiative in 201
 They've taken out the guess work regarding resource usage by leveraging [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler).
 You can also use _kube-downscaler_, but the project has been abandoned on GitHub and has been moved to a non-standard upstream.
 For monitoring energy usage, there's a [Kepler](https://github.com/sustainable-computing-io/kepler).
+
+## Links
+
+- <https://kubeedge.io/>
