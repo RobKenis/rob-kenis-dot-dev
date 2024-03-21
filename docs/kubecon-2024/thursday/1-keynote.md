@@ -49,6 +49,13 @@ They've taken out the guess work regarding resource usage by leveraging [Vertica
 You can also use _kube-downscaler_, but the project has been abandoned on GitHub and has been moved to a non-standard upstream.
 For monitoring energy usage, there's a [Kepler](https://github.com/sustainable-computing-io/kepler).
 
+How does _Scaleway_ optimize their power usage efficiency and water usage efficiency? Basically how do you use the least amount of power
+to operate a data center.
+
+Hot take on power usage: `0 server == 0 watt`, so stop running servers that you don't need. Also think about what you actually need regarding
+actual base consumption, variable load, extra reseverations "just to be safe", premature growth reservations and redundancy.
+
 ## Links
 
 - <https://kubeedge.io/>
+- <https://www.scaleway.com/fr/>
