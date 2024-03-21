@@ -30,7 +30,16 @@ Another problem: TTY in containers. stdin, stdout and stderr are 0 1 and 2. In c
 pipes with an id. When you start a new container, the pipes have different ids, which isn ot allowed.
 
 Solution: QA Wolf developed [crik](https://github.com/qawolf/crik), a tool that works as a wrapper around CRIU and solves the pid problems by starting
-`crik` as pid 1, and the appplication as pid 9001, so criu can take a pid somewhere in between.
+`crik` as pid 1, and the appplication as pid 9001, so criu can take a pid somewhere in between. Crik also saves the pipe IDs and configures CRIU
+to write the restored process logs to those pipes.
+
+The container starts using `crik run -- process.sh`, you can mount the directory where the processes get dumped, this allows you to write
+this to a Persistent Volume if you want. On startup, `crik` will check if the checkpoint directory contains a checkpoint, if something is found,
+it will start a restore, otherwise it will just start the process.
+
+Another problem: The restore process does not know that is being restored. There are runtime files, e.g. _/root/.cache/_. To solve this, _crik_ copies
+the generated files into the image dir to the exact directory where they need to be restored. In-tree resources, like sockets, cannot be restored when the
+directory already exists, so _crik_ has a wrapper for this.
 
 ## Links
 
