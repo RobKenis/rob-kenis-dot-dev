@@ -61,6 +61,9 @@ _Everything is going to break, but workloads cannot_. The takeaway is that the m
 - Cleanup: remove double deploys
 - Unpinning: let developers deploy new changes again
 
+Users should not feel the pain of migrations to another clusters, this includes end users and developers. The platform team should take
+the pain, they decides to move clusters. Zero developer interaction, they should not know they're being migrated.
+
 ## Links
 
 - <https://engineering.atspotify.com/2023/04/spotifys-shift-to-a-fleet-first-mindset-part-1/>
