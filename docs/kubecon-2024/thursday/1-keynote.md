@@ -32,3 +32,11 @@ Instead of picking and configuring separate components to make WebAssembly work 
 They started looking at cloud native a couple years ago. Their challenge has been finding computing resources. They've gone
 from building in-house solutions to leveraging more open source tooling. This has led to less infrastructure maintenance, so they
 can focus more in scientific computing.
+
+## Sponsored Keynotes
+
+Virtual Machines have existed for a long time, and will exist for much longer. Kubernetes has been running containers for a while
+and with [KubeVirt](https://kubevirt.io/), it can run VMs as well.
+
+What makes this work on Kubernetes? ArgoCD for deployments, other operators to keep software up-to-date. The beauty of Kubernetes
+is that you can pick your own components. This create flexibility to pick your storage solution, like [Rook](https://rook.io/).
