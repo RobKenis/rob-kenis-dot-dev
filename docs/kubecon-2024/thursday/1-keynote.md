@@ -40,3 +40,11 @@ and with [KubeVirt](https://kubevirt.io/), it can run VMs as well.
 
 What makes this work on Kubernetes? ArgoCD for deployments, other operators to keep software up-to-date. The beauty of Kubernetes
 is that you can pick your own components. This create flexibility to pick your storage solution, like [Rook](https://rook.io/).
+
+_Deutsche Bahn is making waves yo_
+
+Enough with the jokes, they're making waves to imporove sustainable transport using trains. This is requires technology,
+but this comes with an impact. Deutsche Bahn started the green initiative in 2012 to reduce the energy consumption.
+They've taken out the guess work regarding resource usage by leveraging [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler).
+You can also use _kube-downscaler_, but the project has been abandoned on GitHub and has been moved to a non-standard upstream.
+For monitoring energy usage, there's a [Kepler](https://github.com/sustainable-computing-io/kepler).
