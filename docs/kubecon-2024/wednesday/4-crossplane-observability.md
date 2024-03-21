@@ -53,6 +53,7 @@ Seems like Crossplane also exports metrics, so you can visualize these as well. 
 ## Questions
 
 - Why does Crossplane use Terraform under the hood?
+  - A: It does not use Terraform by default, but you can use the [terraform-provider](https://github.com/upbound/provider-terraform)
 - Is the takeaway to add observability in the compositions so the developers don't have to do it?
 
 ## Links 
