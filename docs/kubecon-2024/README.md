@@ -3,7 +3,11 @@
 <!-- termynal -->
 
 ```
-> kubectl get fucked
+> kubectl config get-users
+NAME
+admin
+robke
+liability-engineering
 ```
 
 ## Links
