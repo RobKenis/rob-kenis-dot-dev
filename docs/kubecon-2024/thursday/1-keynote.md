@@ -11,3 +11,16 @@ be started in half a millisecond. So how do we run [WASM](https://webassembly.or
 
 Introducing [Spin Operator](https://github.com/spinkube/spin-operator) to run WebAssembly applications in a WASM runtime
 instead of a container runtime.
+
+### ZEISS
+
+_They leveraged Spin operator with WASM to reduce costs_. Seems like the opeator does some autoscaling. Advantage of WASM is sick startup times,
+so ideal for aggressive scaling.
+
+### Ecosystem
+
+- <https://github.com/containerd/runwasi>
+- <https://github.com/KWasm/kwasm-operator>
+
+Instead of picking and configuring separate components to make WebAssembly work on Kubernetes, you can leverage tooling like
+[SpinKube](https://www.spinkube.dev/) for an out of the box ecosystem. SpinKube has been submitted to the CNCF. 
