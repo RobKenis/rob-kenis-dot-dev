@@ -24,3 +24,11 @@ so ideal for aggressive scaling.
 
 Instead of picking and configuring separate components to make WebAssembly work on Kubernetes, you can leverage tooling like
 [SpinKube](https://www.spinkube.dev/) for an out of the box ecosystem. SpinKube has been submitted to the CNCF. 
+
+## Top End Users
+
+### CERN
+
+They started looking at cloud native a couple years ago. Their challenge has been finding computing resources. They've gone
+from building in-house solutions to leveraging more open source tooling. This has led to less infrastructure maintenance, so they
+can focus more in scientific computing.
