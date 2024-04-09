@@ -56,8 +56,28 @@ of preference. For allowed services, preventive and recommended controls are put
 
 The platform team provides teams with simple examples for complex scenarios.
 
+### Service Control Policies
+
+Make sure that users only get access to services that are SOC2 compliant and are available in eu-west-1. Every service is denied by default, only
+the compliant services are whitelisted.
+
+### Permissions Boundary
+
+This is a policy like any other in IAM, but it makes sure that all your actions stay within the boundary that the platform team defines. This makes
+sure that some resources are protected from tampering by the application teams. To make sure that the Permission Boundary is always applied, 
+a Permission Boundary must be set on all `iam:CreateRole` actions.
+
+### Corrective Controls
+
+When an EC2 is created in a public subnet, an EventBridge Rule is triggered to invoke a Lambda to terminate the violating EC2 instance.
+
+### Lessons Learned
+
+- Preventive and corrective controls are very effective
+- EventBridge and Lambda allow for flexibility
 
 ## Links
 
 - <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html>
 - <https://aws.amazon.com/blogs/mt/aws-cloudformation-guardrails-protecting-your-stacks-and-ensuring-safer-updates/>
+- <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html>
