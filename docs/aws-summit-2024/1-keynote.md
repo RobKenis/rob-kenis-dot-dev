@@ -41,6 +41,9 @@ energy requirements to power training and inference.
 The middle layer contains tools to build and scale FMs and LLMs. Amazon Bedrock is a fully managed service that provides base models.
 Bedrock includes guard rails to use AI in a responsible way.
 
+The top of the stack consists of apps that leverage FMs and LLMs. Amazon Q is the genrative AI powered assistant, that's tailored to your
+business.
+
 ### PostNL
 
 PostNL delivers 1.1M parcels per day. Over the centuries they've adapted from horeses to cars, from physical offices to online offices
@@ -59,8 +62,8 @@ by their own developers and AWS. An effective way to provide serverless engineer
 setup of new AWS accounts that are automatilly onboarded on their network. Making wrong things hard using guard rails will also help your developers.
 
 
-
 ## Links
 
 - <https://aws.amazon.com/training/restart/>
 - <https://www.adobe.com/products/firefly.html>
+- <https://plugins.jetbrains.com/plugin/11349-aws-toolkit--amazon-q-codewhisperer-and-more>
