@@ -15,3 +15,6 @@ behind the project? The maintainers might want to keep the project open source, 
 to know what you're building on top off, and everything can change quickly.
 
 ## Finding community
+
+In 2017, Kubernetes was around but pretty early, but containers were already big. Communities were forming and
+7 years later, they've becoming a big thing.
