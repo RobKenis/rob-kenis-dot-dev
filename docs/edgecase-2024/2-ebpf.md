@@ -41,7 +41,8 @@ service mesh. Less side cars means more performance and less resources.
 
 ## Security
 
-Basically [Falco](https://falco.org/), [Tetragon](https://tetragon.io/) and alike.
+Basically [Falco](https://falco.org/), [Tetragon](https://tetragon.io/) and alike. Jan likes the logo,
+so I'll mention [KubeArmor](https://kubearmor.io/) as well.
 
 ## Questions
 
