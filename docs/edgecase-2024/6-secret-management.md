@@ -32,3 +32,4 @@ which can in some opinions be seen as a bad practice.
 ## Links
 
 - <https://tag-app-delivery.cncf.io/>
+- <https://github.com/lianmakesthings/secrets-management-talk>
