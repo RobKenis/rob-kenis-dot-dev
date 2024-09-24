@@ -36,6 +36,13 @@ potentially malicious programs.
 eBPF can implement load balancing and traffic filtering directly into the appication without loading
 extra kernel modules. Less intermediate steps means more performance, which means more better.
 
+For Kubernetes, this means that you can replace a sidecar-based service mesh with an eBPF based
+service mesh. Less side cars means more performance and less resources.
+
+## Security
+
+Basically [Falco](https://falco.org/), [Tetragon](https://tetragon.io/) and alike.
+
 ## Questions
 
 - Do I need to learn C to use eBPF?
