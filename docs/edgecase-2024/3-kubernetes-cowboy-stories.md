@@ -32,3 +32,33 @@ Solution: Holy fuck this was a long buildup to configure connection timeouts.
 Situation: Air conditioning was on in the office, not the server room.
 
 Solution: I think you can see where this is going.
+
+## Turtles all the way down
+
+Situation: You only need access to a single Kubernetes namespace, but you want to GitOps all the things.
+Because you only have a namespace scoped, it's hard to deploy CRDs, since they're cluster wide resources.
+So some smartass deployed [vcluster](https://www.vcluster.com/) in their namespace to work around this and,
+surprised Pickachu, this will go very wrong shortly.
+
+Solution: Don't
+
+## ML Platform Engineering
+
+_Finally a recent story_
+
+Situation: Engineer built pipelines for everything. If it was in the ML space, there was a pipeline for this.
+Then some meetups happened and the engineering department got some ideas. Train the model on a laptop, put it 
+in production and profit! They make it sound like this is a good thing. 
+
+Take away: Don't overongeineer the platform. Make road to poduction easy. Go to production!
+
+_Don't let people push from local to production._
+
+## Message explosion
+
+Situation: Application reads from database and send message to mobile operator. Deploying this was difficult,
+since restricted access. So some smartass implemented a feature where you can send a text message with 'START'
+to deploy your changes. _How could this possibly go wrong?_ Aaaaand the HTTP request from the mobile operator
+would have a timeout of 30s. So when sending the messages, the timeout is reached and a retry is triggered.
+
+Solution: Don't
