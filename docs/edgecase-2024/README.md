@@ -28,3 +28,4 @@ a network switch and a 5G router. It's connected to the internet, because it's c
 this case into power, it will show up in the control plane and you can start with your `kubectl` commands.
 
 The plan with this thing is to show how easy it is to deploy Kubernetes. Plug it in and you're ready to go.
+
