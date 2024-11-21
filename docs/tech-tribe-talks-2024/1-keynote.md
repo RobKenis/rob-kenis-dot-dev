@@ -53,6 +53,23 @@ The combination of this technology, sensor data and camera footage, it has been 
 Field officers drive and sail through the port to detect if assets or materials are out of the ordinary. In the future, their
 job will be improved by comparing sattelite data over time to detect dangerous or unplanned situations.
 
+## Cyber security
+
+In the port, cyber resilience in an important concept. When the port is being attacked, it is either organized crime or state
+sponsored. Before the invasion of Ukraine, port terminals were hacked to make statement. When the port is hacked, do we still have
+an operational port? "When the computer systems are down, can we still open a briges?". When discussing cyber attacks, this also includes
+the electrician that knows where the button is to open the bridge. 
+
+As an organisation, cyber attacks are high on the risk report. The probability is close to certain and the impact is enourmous. After
+the city of Antwerp was hacked a few years ago, the fact that the risk is high, was confirmed.
+
+## Culture
+
+"Yes, but" must become "What if" to drive innovation. Having enough "Yes but" people in the same room, is disastrous for innovation.
+Inside innovation, this happens when you have a problem and you want to solve it. On the other hand, outside innovation, propses 
+innovation. Vito made a camera, attached it to a drone and used it to find diseases on corn. This technology could be used to detect
+oil leaks in the port. So an innovation for farmning could also be used in ports.
+
 ## Conclusion
 
 APICA might be one of the most innovative things I've seen.
