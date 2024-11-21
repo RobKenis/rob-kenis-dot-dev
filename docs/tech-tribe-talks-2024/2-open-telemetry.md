@@ -72,6 +72,8 @@ put it in production. **Be agile!**
 Introducing Observability is not a one shot effort. This is an evolving thing that takes continuous effort. It's also going to cost a lot,
 thanks DataDog, but it's going to be worth it in the long run.
 
+Running observability in the cloud is a lot easier than running observability on premises. 
+
 ## Links
 
 - <https://github.com/serilog/serilog>
