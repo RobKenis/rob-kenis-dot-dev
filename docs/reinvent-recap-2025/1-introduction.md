@@ -4,7 +4,7 @@
 
 [AWS Nitro](https://aws.amazon.com/ec2/nitro/) is the capability to offload features off to separate PCI cards. Using Nitro, you
 are fully isolated from AWS as a hypervisor. There is no shell access on the hypervisor. All these PCI
-cards have custom silicon on them. By building upon custom siicon, this drove innovation towards Graviton processors.
+cards have custom silicon on them. By building upon custom silicon, this drove innovation towards Graviton processors.
 This year, AWS released [Graviton 4](https://www.aboutamazon.com/news/aws/graviton4-aws-cloud-computing-chip) wieeeeee, the new
 generation is the new best price to performance cpu family. The new generation uses even less energy.
 
@@ -22,7 +22,7 @@ optimized to store data in for example [Parquet](https://parquet.apache.org/). [
 
 ## Databases
 
-AWS offers a range of databases, ranging from RDS to purpose built databaess like DynamoDB. When asking customers, they want everying. Customers
+AWS offers a range of databases, ranging from RDS to purpose built databases like DynamoDB. When asking customers, they want everying. Customers
 want a multi-region, high available, zero burden, SQL like database. [Amazon Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/) fixes all those
 things. _Looks like I'm never hosting Postgres myself again yoooo._ Amazon claims to get 4x less latency compared to Google Cloud Spanner, let's see
 how this holds up, but pretty bold claim. AWS learned some things when building this, so they also release multi-region strong consistency
