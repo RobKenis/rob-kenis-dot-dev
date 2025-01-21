@@ -7,4 +7,4 @@ This architecture also moves the shared resonsibility a little more to AWS since
 
 ## Serverless Databases
 
-Refer to [Databases](./1-introduction.md#Databases) in the introduction, it's more things on [Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/).
+Refer to [Databases](./1-introduction.md#databases) in the introduction, it's more things on [Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/).
