@@ -1,6 +1,6 @@
 mkdocs
-mkdocs-material
 mkdocs-git-revision-date-localized-plugin
+mkdocs-material
 mkdocs-rss-plugin
-termynal
 pymdown-extensions
+termynal
