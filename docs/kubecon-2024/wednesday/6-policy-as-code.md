@@ -20,12 +20,12 @@ TLDR: Lots of big companies leak data because broken access controls.
 3. if role then 200 else 403
 
 The issue with RBAC is that is does not provide flexible access management based on resources. This is why we need _attributes_,
-now we can provide access based on the role in the token, and properties of the resource that will be accessed. This is known 
+now we can provide access based on the role in the token, and properties of the resource that will be accessed. This is known
 as Attribute Based Access Control.
 
 ## Attribute Based Access Control
 
-Gives more control when handing out permissions based on user or resource attributes. The limitation of this option is that it 
+Gives more control when handing out permissions based on user or resource attributes. The limitation of this option is that it
 does not handle relations. Relationship Based Access Control works based on the relationship that I have to a resource, for example
 _owner_ or _viewer_ of a resource, which impacts the actions I can execute on it. GitHub does this with Organizations as owner of a repository.
 

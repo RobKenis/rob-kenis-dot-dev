@@ -9,9 +9,9 @@ Most of the applications are focused around energy monitoring and pool maintenan
 
 ## Energy monitoring
 
-In 2020, this dude got a smart reader for energy consumption. It connects to a P1 port, so pretty stable. At the time, nothing Dockerized existed, so a single RPI was used to only handle the P1 monitoring. 
-After time evolved, a Docker image was published. When the Docker image was available, the application could be hosted on k3s. The pod needs to run on a specific node because it needs to access the P1 port 
-and needs privileged access to the host to read the serial port. To get around that, this dude build a serial-to-network proxy which exposed the serial port over socat. Now the contianer can run anywhere and 
+In 2020, this dude got a smart reader for energy consumption. It connects to a P1 port, so pretty stable. At the time, nothing Dockerized existed, so a single RPI was used to only handle the P1 monitoring.
+After time evolved, a Docker image was published. When the Docker image was available, the application could be hosted on k3s. The pod needs to run on a specific node because it needs to access the P1 port
+and needs privileged access to the host to read the serial port. To get around that, this dude build a serial-to-network proxy which exposed the serial port over socat. Now the contianer can run anywhere and
 accesses the proxy on the specific node.
 
 - https://github.com/intelwolf/p1monitor
@@ -37,7 +37,7 @@ Solution: a sonar system on the mower. The sonar sensor is connected to an RPi, 
 
 ## Pool control
 
-Problem: the pool is not very hygienic. 
+Problem: the pool is not very hygienic.
 
 The pump has 2 settings: heat and cool. When the water is hot enough, the pump stops running, but this also causes the filter to stop _lol_. So we need a timer again to make sure the filter is running
 when the heater is off.
@@ -45,7 +45,7 @@ when the heater is off.
 Solution: The CronJob reads the temperature on the roof and the water temperature every 5 minutes. This is used to determine if the pump needs to run. If the pump has not run for 24h, turn it on for some
 time so the water is filtered, even when the water is hot enough. Everything is also stored in a database for statistics of course.
 
-Another problem: heating system is too slow. The pipes go over the roof to heat the water using the sun, which makes the wife mad because she wants to swim _now_. So let's add another heating pump to 
+Another problem: heating system is too slow. The pipes go over the roof to heat the water using the sun, which makes the wife mad because she wants to swim _now_. So let's add another heating pump to
 heat the water quicker.
 
 Another problem: the RPi powering this was not very stable. So we need to move the entire thing to a Kubernetes cluster. Make the RPi handle the communication to the pool hardware, expose it to
@@ -58,8 +58,8 @@ GitHub, ArgoCD pulls the changes and deploys to Kubernetes.
 
 ## Security
 
-Everything is publicly accessible, which poses some security questions. Ingresses are exposed through Traefik with Let's Encrypt. Some middleware is running with authentication. 
-[Traefik ForwardAuth](https://doc.traefik.io/traefik/middlewares/http/forwardauth/). 
+Everything is publicly accessible, which poses some security questions. Ingresses are exposed through Traefik with Let's Encrypt. Some middleware is running with authentication.
+[Traefik ForwardAuth](https://doc.traefik.io/traefik/middlewares/http/forwardauth/).
 
 ### Threat detection
 

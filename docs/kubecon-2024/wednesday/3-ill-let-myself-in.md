@@ -1,4 +1,4 @@
-# I'll let myself in 
+# I'll let myself in
 
 > Kubernetes privilege escalation tactics
 
@@ -28,7 +28,7 @@ Tester does nasty things in the cluster and works together with developers and a
 
 ### Common findings
 
- Mostly a misconfiguration instead of a zero-day (e.g. Kubernetes RBAC). Look into [good practices](https://kubernetes.io/docs/concepts/security/rbac-good-practices/), 
+ Mostly a misconfiguration instead of a zero-day (e.g. Kubernetes RBAC). Look into [good practices](https://kubernetes.io/docs/concepts/security/rbac-good-practices/),
  a common misconfiguration is `secret:Get` vs `secret:List`. If you know the name of a secret, you can mount it in to a Pod and retrieve the value.
 
  Pro tip: Don't hand out `RBAC *` permissions, it's a shortcut to getting cluster admin permissions.

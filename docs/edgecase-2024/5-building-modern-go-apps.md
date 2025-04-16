@@ -2,7 +2,7 @@
 
 > What once started as a Flask application and a Vue frontend, now looks like the CNCF landscape page.
 
-Bro built an entire environment in Kubernetes, made it super complex and is now doing a demo about it. 
+Bro built an entire environment in Kubernetes, made it super complex and is now doing a demo about it.
 The environment is hard to recreate locally in Docker Compose, so we'll use a couple tools to
 plug into the live environment so it looks local.
 

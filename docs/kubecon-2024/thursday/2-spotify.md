@@ -34,7 +34,7 @@ stages to make this happen.
 1. Preparing the architecture
 
 There's a global load balancer in front of all the clusters. Services will need to be moved between clusters. To enable this,
-Spotify uses Service Discovery across cluster boundaries. If an API/KIND/Accelerator/Machine type is used, **assume it's used** on 
+Spotify uses Service Discovery across cluster boundaries. If an API/KIND/Accelerator/Machine type is used, **assume it's used** on
 all clusters. The ecosystem of tooling has to work across cluster boundaries. Deployments need to be cluster agnostic. The monitoring
 and logging don't have to know in which cluster they are operating. Infrastructure as Code is not a nice to have, it's a neccessity.
 

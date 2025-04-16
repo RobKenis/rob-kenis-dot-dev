@@ -50,7 +50,7 @@ Rules when chaos engineering:
 
 Embrace chaos engineering in the organisation. Organise game days with everyone that is part of the application, this includes
 product owners, developers, infra people and so on. Chaos Engineering is built upon the "what if" mentality.
-Hold firedrills, build an experiment to break the platform. See how the organisation reacts when the application is not 
+Hold firedrills, build an experiment to break the platform. See how the organisation reacts when the application is not
 able to resolve the issue on its own. Validate if the people work as expected.
 
 ## Links

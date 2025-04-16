@@ -17,7 +17,7 @@ maintenance window is way harder, and it costs money to shut down during an upgr
 ## A peek under the hood
 
 There's an operator in Kubernetes. You give it a spec of something to manage and the operator makes sure it works and is in the desired state. The [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/) is run on the control plane and makes sure the cluster is in the desired state. A controller is a continuous loop of something that happens, it checks current
-state and does actions on that state. It's a never ending loop, this is called the _reconcile loop_. 
+state and does actions on that state. It's a never ending loop, this is called the _reconcile loop_.
 
 When you do `kubectl`, you pass your desired state to the control plane, then some controllers run to match the desired state to the current state and tada, magic!
 
@@ -35,7 +35,7 @@ _hey I know some of these words_
 ## Custom operator vs workload
 
 An operator is focussed on a single task. Ansible or Terraform do not do an explicit thing, they manage the entire stack. Keeping the operator to a single thing, keeps it smaller and helps with easier monitoring.
-Using an operator leans on top of the _well oiled_ machine called Kubernetes. _Depends how you write your operator, it's just a loop._ 
+Using an operator leans on top of the _well oiled_ machine called Kubernetes. _Depends how you write your operator, it's just a loop._
 
 ### A little sprinkle of GitOps
 

@@ -12,19 +12,19 @@ as well as finding oil spills in the water.
 Introducing "drone as a service". The port wants to do 18 drone flights per day, but the technology gets old pretty quick.
 
 [ADLC](https://adlc.eu/en) delivers cargo drones. No more traffic jams, just move it through the sky. The drones can carry
-15KG of cargo, for example chemical samples. The 15KG is not a technical limit, it's limited by law. The vision of the port is 
+15KG of cargo, for example chemical samples. The 15KG is not a technical limit, it's limited by law. The vision of the port is
 to make drone traffic financially sustainable, because depending on money from Europe and Belgium is not sustainable.
 
 ## Autonomous vehicles
 
 In 2018, the initiave was launched to control ships from a distance (more specific binnenvaartsschepen, whatever that is in English).
 The dream was to commercialize this in 2021. In 2019, the port and Vlaamse Waterweg pushed hard on this initiative. [Seafar](https://seafar.eu/)
-controls and monitors cargo ships from a distance. This kind of innovation is a must to keep cargo ships afloat (haha), because 
+controls and monitors cargo ships from a distance. This kind of innovation is a must to keep cargo ships afloat (haha), because
 work-life balance is pretty bad, so there are less people entering the sector.
 
 ## Internet of things
 
-The port owns a bunch of assets, bridges, fenders, embarkments, and more. For example, sensors measure the force on 
+The port owns a bunch of assets, bridges, fenders, embarkments, and more. For example, sensors measure the force on
 "meerpalen" (the thing a boat throws some rope around to not float away), as well as measuring the wear and tear on bridges.
 
 Smart cameras are used to determine what's moving in the port, trucks, trains, ships. Pre-trained, open source models
@@ -58,7 +58,7 @@ job will be improved by comparing sattelite data over time to detect dangerous o
 In the port, cyber resilience in an important concept. When the port is being attacked, it is either organized crime or state
 sponsored. Before the invasion of Ukraine, port terminals were hacked to make statement. When the port is hacked, do we still have
 an operational port? "When the computer systems are down, can we still open a briges?". When discussing cyber attacks, this also includes
-the electrician that knows where the button is to open the bridge. 
+the electrician that knows where the button is to open the bridge.
 
 As an organisation, cyber attacks are high on the risk report. The probability is close to certain and the impact is enourmous. After
 the city of Antwerp was hacked a few years ago, the fact that the risk is high, was confirmed.
@@ -66,7 +66,7 @@ the city of Antwerp was hacked a few years ago, the fact that the risk is high, 
 ## Culture
 
 "Yes, but" must become "What if" to drive innovation. Having enough "Yes but" people in the same room, is disastrous for innovation.
-Inside innovation, this happens when you have a problem and you want to solve it. On the other hand, outside innovation, propses 
+Inside innovation, this happens when you have a problem and you want to solve it. On the other hand, outside innovation, propses
 innovation. Vito made a camera, attached it to a drone and used it to find diseases on corn. This technology could be used to detect
 oil leaks in the port. So an innovation for farmning could also be used in ports.
 

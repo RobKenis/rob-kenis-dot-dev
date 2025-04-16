@@ -7,7 +7,7 @@
 Spot instances give a 40-60% cost reduction in Google Cloud. Downside of this is that the nodes can
 just get yeeted out of the cluster and your workload fails. This is especially bad for long running jobs.
 
-An option to reduce this issue, is to run the test in VMs, for example in [Firecracker](https://firecracker-microvm.github.io/), 
+An option to reduce this issue, is to run the test in VMs, for example in [Firecracker](https://firecracker-microvm.github.io/),
 but this requires nested virtualization, which is not available in GKE.
 
 Anther option is _Checkpoint/Restore in Userspace (CRIU)_ to migrate the process tree. _runc_ can checkpoint and restore
@@ -18,7 +18,7 @@ on a Persistent Volume.
 ## CRIU
 
 It infects the process using _ptrace_, this is why CRIU needs extra capabilities. Parasite code dumps all required information such
-as resources, file descriptors etc. During restore, CRIU loads memory pages, files, sockets and prepare namespaces. Then it 
+as resources, file descriptors etc. During restore, CRIU loads memory pages, files, sockets and prepare namespaces. Then it
 creates the processes in the tree and maps the memory of the processes.
 
 ## Containers

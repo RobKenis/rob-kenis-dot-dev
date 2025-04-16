@@ -2,7 +2,7 @@
 
 ## Analytics
 
-[Amazon S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables.html) is a new storage class that stores your data in 
+[Amazon S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables.html) is a new storage class that stores your data in
 a tabular format using [Apache Iceberg](https://iceberg.apache.org/). This improves query performance and offers 10x more transactions
 per second. The thing integrates pretty well with other data services, like Glue and Athena.
 

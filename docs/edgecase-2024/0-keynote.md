@@ -2,10 +2,10 @@
 
 ## Reflecting on 3 years of change
 
-Hey ho let's go, Gerrit survived the stairs. I promise there's some context to that, but it doesn't matter. 
+Hey ho let's go, Gerrit survived the stairs. I promise there's some context to that, but it doesn't matter.
 In the last couple years, Kubernetes has moved more to the Edge, to the not so trivial locations. What has improved
 over the years? [k3s](https://k3s.io/) made your life a little easier in the hands of Rancher. Next to Sidero catching
-up with [Talos](https://www.talos.dev/). But without some extra layers, Kubernetes is not production worthy. 
+up with [Talos](https://www.talos.dev/). But without some extra layers, Kubernetes is not production worthy.
 
 Three years ago, the biggest hurdle with Kubernetes was "why would you bring such complex technology to the edge?".
 The technology is already complex, but then the environment is unpredictable. And that feedback is exactly the same today.
@@ -16,7 +16,7 @@ years ago with systemd. But now, everybody know how systemd works, it's the stan
 
 Why does Kubernetes feel complex? I have 3 control plane nodes, 3 worker nodes, simple enough. Aaaand then there's Loki and
 Thanos and Prometheus and Grafana and tracing and security and Argo and backups and Velero and storage and aaaaaaaah there's my
-platform. Haha jokes, there's no workload yet, so I finally deploy my application. But as you can see, the complexity is in the 
+platform. Haha jokes, there's no workload yet, so I finally deploy my application. But as you can see, the complexity is in the
 platform. Kubernetes is simple, it just deploys containers.
 
 > Kubernetes is not complex, the landscape makes it complex.
@@ -28,4 +28,3 @@ a network switch and a 5G router. It's connected to the internet, because it's c
 this case into power, it will show up in the control plane and you can start with your `kubectl` commands.
 
 The plan with this thing is to show how easy it is to deploy Kubernetes. Plug it in and you're ready to go.
-

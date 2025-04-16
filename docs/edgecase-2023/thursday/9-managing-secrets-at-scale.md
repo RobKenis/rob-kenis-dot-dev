@@ -1,6 +1,6 @@
 # Managing Secrets at Scale (Workshop)
 
-If you have a handful of clusters, it's fine to work with a test pipeline: build -> push -> deploy. 
+If you have a handful of clusters, it's fine to work with a test pipeline: build -> push -> deploy.
 
 However, when you have an entire set of clusters per client, so 100+ clusters, having a pipeline does not scale. To resolve this, split up the CI and the CD part. Build an artifact in the pipeline and let
 GitOps handle the rest. This works great at scale.

@@ -29,7 +29,7 @@ team along, felt like a natural choice.
 Making a company-wide library makes it easier for teams to onboard on the solution. The library ships with the default configuration,
 but is open to choices of the team.
 
-Centralizing an OpenTelemetry collector is a great way to simplify configuration. Having a collector allows you to filter on logs based on 
+Centralizing an OpenTelemetry collector is a great way to simplify configuration. Having a collector allows you to filter on logs based on
 namespace. _Aaaaah this is not a technical talk._
 
 ## Onboarding
@@ -37,13 +37,13 @@ namespace. _Aaaaah this is not a technical talk._
 Make a migration guide for teams to onboard onto your platform. Include Pull Requests in the documentation, so the team can exactly copy
 the steps you want.
 
-Sit together with early adopters to work out the kinks in the migration guide. Your migration guide is a living document. Put it in a README 
+Sit together with early adopters to work out the kinks in the migration guide. Your migration guide is a living document. Put it in a README
 or something, don't let it drown in Confluence.
 
 ## Learning the Platform
 
 When using a new platform, teams don't know where to look. Learning a new platform is mostly about culture. Promote innovation, promote
-learning new things, _also promote breaking things, but we'll get into that_, and people will pick up on new technology because it is 
+learning new things, _also promote breaking things, but we'll get into that_, and people will pick up on new technology because it is
 interesting.
 
 ## Alerting and Errors
@@ -55,16 +55,16 @@ Get teams used to responding to alerts as part of the regular workflow. Alert in
 respond to alerts.
 
 Focus your alerts on outcomes and not errors, or eventually your code will cater to your observability platform. For example, some events get picked
-up in the wrong order. Occasionaly, your application will throw errors because the messages are out of order. The event will get resend to the 
+up in the wrong order. Occasionaly, your application will throw errors because the messages are out of order. The event will get resend to the
 queue and gets picked up a few minutes later, ordering is fine and everything is happy. Initially you don't think about this behaviour. When introducing
 observability, you get notified about the failing messages and this pushes you to handling the problem of out of order events.
 
-Oooor you don't fix the message handling, because requeueing the message will have the same outcome. The solution to this problem depends on the 
+Oooor you don't fix the message handling, because requeueing the message will have the same outcome. The solution to this problem depends on the
 amount of errors your system is experiencing. Solve the hard parts first and fix this later? Depends a bit on the application and the team.
 
 ## Be agile
 
-If you deploy every 3 months, what's the point of immediately seeing alerts? If you see the alert and build a fix, you need to be able to 
+If you deploy every 3 months, what's the point of immediately seeing alerts? If you see the alert and build a fix, you need to be able to
 put it in production. **Be agile!**
 
 ## Conclusion
@@ -72,7 +72,7 @@ put it in production. **Be agile!**
 Introducing Observability is not a one shot effort. This is an evolving thing that takes continuous effort. It's also going to cost a lot,
 thanks DataDog, but it's going to be worth it in the long run.
 
-Running observability in the cloud is a lot easier than running observability on premises. 
+Running observability in the cloud is a lot easier than running observability on premises.
 
 ## Links
 

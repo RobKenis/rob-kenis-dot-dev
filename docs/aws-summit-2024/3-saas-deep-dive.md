@@ -13,7 +13,7 @@ Multiple tenants on the same application can go down at the same time. We need t
 
 2. Cost efficiency
 
-We can overprovision a bit, but money isn't infinite. Business doesn't want to spend money, but wants all the 
+We can overprovision a bit, but money isn't infinite. Business doesn't want to spend money, but wants all the
 features.
 
 3. Predictability

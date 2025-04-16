@@ -11,7 +11,7 @@ been evolving to support this, a great example is k3s. The biggest game changer
 is GitOps. It allows us to have a single source of truth. Examples are Argo, Flux and
 Fleet.
 
-Talox Linux and Kairos make k8s part of the Linux operating system. Now we are in the 
+Talox Linux and Kairos make k8s part of the Linux operating system. Now we are in the
 situation were we can embed everything. "Why don't we flash k8s on top of a smart watch?"
 
 ## Kubernetes as an OS

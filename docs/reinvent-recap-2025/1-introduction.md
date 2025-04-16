@@ -9,7 +9,7 @@ This year, AWS released [Graviton 4](https://www.aboutamazon.com/news/aws/gravit
 generation is the new best price to performance cpu family. The new generation uses even less energy.
 
 [Trainium2](https://press.aboutamazon.com/2024/12/aws-trainium2-instances-now-generally-available) was also released, this family
-is aimed towards AI workloads. Something something petaflops, I don't really speak this language, but it got faster. _Trainium3 is 
+is aimed towards AI workloads. Something something petaflops, I don't really speak this language, but it got faster. _Trainium3 is
 coming soon._
 
 ## Storage
@@ -17,7 +17,7 @@ coming soon._
 Amazon S3 holds over 400 trillion objects, which is pretty dope. S3 is often picked as the storage of choice, because it has a great
 price to performance ratio, for example by leveraging Intelligent Tiering to pick the right [storage class](https://aws.amazon.com/s3/storage-classes/).
 
-[S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables.html) is a new bucket type to store tabular data, 
+[S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables.html) is a new bucket type to store tabular data,
 optimized to store data in for example [Parquet](https://parquet.apache.org/). [S3 Metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html).
 
 ## Databases
@@ -32,7 +32,7 @@ on DynamoDB Global Tables.
 
 AI has come to the market, and it's not going away, so inference is becoming a building block. [Amazon Bedrock](https://aws.amazon.com/bedrock/)
 runs foundational models. This year, AWS improved the service mostly on security, to guarantee that your data is not shared with the model
-vendors, you always maintain full control over your data. 
+vendors, you always maintain full control over your data.
 
 Bedrock offers a broad range of models, but the problem is that these are foundational models. [Bedrock Model Distillation](https://docs.aws.amazon.com/bedrock/latest/userguide/model-distillation.html)
 is the new way to make those models more focused on your business.

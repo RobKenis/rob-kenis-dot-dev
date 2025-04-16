@@ -1,6 +1,6 @@
 # Edge computing at Check-fil-A
 
-How 3000 Kubernetes clusters helps our customers eat more chicken. 
+How 3000 Kubernetes clusters helps our customers eat more chicken.
 
 ## What is Chick-fil-A
 
@@ -28,7 +28,7 @@ Point Of Sale data: keystrokes, user interaction..
 ### Sample use case
 
 Data is collected from Lidar, POS and a team member's tablet. Data is sent to the edge (kubernetes) using MoscaJS (MQTT broker).
-Data is processed and some is sent to the cloud. The forecase engine in the cloud calculates some stuff and sends it back to the 
+Data is processed and some is sent to the cloud. The forecase engine in the cloud calculates some stuff and sends it back to the
 edge application.
 
 This helps worker and the kitchen to better prepare orders.
@@ -64,7 +64,7 @@ all restaurant locations. Teams can have a different release cadence. They have 
 has already been done. After that, they hit an API to deploy their applications.
 
 The deployment orchrestrator can rollout deployment to selected restaurants. Depending on error rates, the rollout is
-promoted to all restaurants or rolled back and feedback is given to the teams. This looks like [Argo Rollouts](https://argo-rollouts.readthedocs.io/en/stable/) 
+promoted to all restaurants or rolled back and feedback is given to the teams. This looks like [Argo Rollouts](https://argo-rollouts.readthedocs.io/en/stable/)
 but on a much much much larger scale.
 
 ## Persistence
@@ -75,7 +75,7 @@ MongoDB is the primary data store. Using the database is more of a tool and not 
 with at the edge is not imporant anymore after like 2 minutes, so it can be lost with almost no concern.
 
 MQTT is used a lot, no a lot of REST/HTTP apis. All the traffic is routed to the cloud, process it there and send it back using MQTT.
-[Vector](https://vector.dev/) is also used, but I missed why. 
+[Vector](https://vector.dev/) is also used, but I missed why.
 When you need something important, send it up to the cloud, process it, send it back. *Important state is in the cloud*.
 
 ## Observability
@@ -132,7 +132,7 @@ Kubernetes is awesome at the edge. Acknowledge your constraints. Don't be cute a
     - Started of with 3 people. Went up to 6 when they were in production. Now there's 2 teams, one doing core platform and one doing IoT. But basically still a small team. The support
       work like wiping the nodes is external, so the plaform team does not have to do that.
 - How do you make the cluster HA?
-    - K3s stores state in SQLite. If there's an issue on cluster-level, which doesn't happen a lot, they rebuild the cluster. _lol_ If a single node goes down, it's fine, there's a 
+    - K3s stores state in SQLite. If there's an issue on cluster-level, which doesn't happen a lot, they rebuild the cluster. _lol_ If a single node goes down, it's fine, there's a
       process to recover from a master failure too. Then a replacement node is shipped.
 - How long does a store survive without upstream connectivity?
     - The entire stack does dark. A backup internet connection is reserved for incoming orders and credit card processing. The edge cluster is down, but the restaurant keeps functioning.

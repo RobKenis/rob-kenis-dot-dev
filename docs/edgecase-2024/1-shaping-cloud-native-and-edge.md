@@ -25,7 +25,7 @@ In 2017, Kubernetes was around but pretty early, but containers were already big
 
 > The era of large models over, we will now focus on specialized models.
 
-[Code LLama](https://www.llama.com/code-llama/), [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) and 
+[Code LLama](https://www.llama.com/code-llama/), [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) and
 [Hippocratic AI](https://www.hippocraticai.com/) are smaller, specialized models build for a specific domain.
 
 Software development is changing, you build your analytics on your big server and IoT on your Edge ARM device.
@@ -35,4 +35,3 @@ This comes with a bunch of new challenges: unreliable network, cost and security
 
 The ecosystem is growing, from the CNCF AI working group, to "Safety by design" initiatives and learning groups
 for students.
-

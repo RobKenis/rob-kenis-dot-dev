@@ -32,18 +32,18 @@ they didn't need that much storage.
 For the database, they went with AWS RDS, high available, multi-AZ, all the bells and whistles. _But_ they went with the default parameter group, so they ran into the limit of max connections.
 
 The managed Kubernetes service is not as managed as they would have liked, because they needed to run `helm install cluster-autoscaler`. [Crossplane](https://www.crossplane.io/) is leveraged to provision
-RDS, EFS and IAM roles. This helps with managing the entire stack of a customer in a single Helm Chart. To ensure that manifests are deployed in the right order, the `"helm.sh/hook-weight"` annotation is 
+RDS, EFS and IAM roles. This helps with managing the entire stack of a customer in a single Helm Chart. To ensure that manifests are deployed in the right order, the `"helm.sh/hook-weight"` annotation is
 used.
 
 #### Autoscaling
 
-[Keda](https://keda.sh/) scales based on (e.g. Prometheus) metrics. Each Wordpress Pod is running with the apache-metrics-exporter, and then Keda can scale the pods based on request latency. 
+[Keda](https://keda.sh/) scales based on (e.g. Prometheus) metrics. Each Wordpress Pod is running with the apache-metrics-exporter, and then Keda can scale the pods based on request latency.
 
 !!! note "Not sure why they pulled Keda in, HorizontalPodAutoscaler does this by default"
 
 ## Improving startup time
 
-Create a DaemonSet to pre-pull the image to all the nodes. And overprovision the nodes _(they always have +3 nodes)_. 
+Create a DaemonSet to pre-pull the image to all the nodes. And overprovision the nodes _(they always have +3 nodes)_.
 
 !!! quote "I like how you've worked around the problem so far that you can't even see it anymore. ~ Rob"
 

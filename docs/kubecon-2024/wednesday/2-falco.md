@@ -23,7 +23,7 @@ Let's say we want to monitor 26M system calls per second. There are 3 Kernel Dri
 Module is the most performant option, but is harder to manage. The eBPF modules work for every kernel and distribution and are easier to manage. Sending events from kernel space to user
 space happens through buffers. If any of these buffers is full, the new events are lost forever. For newer drivers, you can share buffers across CPUs. In newer versions of Falco,
 there's more precise control over monitored syscalls. Whenever a non-interesting call triggers, the process is immediately ignored. The events are ordered when entering the buffer,
-this is currently the most overhead. 
+this is currently the most overhead.
 
 ### Benchmarking
 

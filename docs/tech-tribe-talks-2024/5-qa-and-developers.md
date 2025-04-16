@@ -2,7 +2,7 @@
 
 ## The problem
 
-A bunch of developers are rapidly developing features. Some QA people are validating the features. The PO 
+A bunch of developers are rapidly developing features. Some QA people are validating the features. The PO
 is standing on the sidelines. Because of a lack of time, we go to production early and everything breaks.
 
 Stakeholders create a feature request with (poor) requirements, and it needs to be done in 2 days.
@@ -15,7 +15,7 @@ Get an understanding between the developers and the QA folks. Developers want to
 end up on an environment (while introducing bugs). From a developer point of view, QA people create
 a sense of job security, while keeping up the feeling of impeding doom.
 
-If you keep running in the same circle of finding and fixing bugs, eventually dev and QA will not cooperate 
+If you keep running in the same circle of finding and fixing bugs, eventually dev and QA will not cooperate
 anymore.
 
 Step 1: Clear out confusion in requirements, so dev and QA want the same thing.
@@ -23,7 +23,7 @@ Step 1: Clear out confusion in requirements, so dev and QA want the same thing.
 ## The second solution
 
 When you depend on Jira and Confluence notifications, you will get a bunch of e-mails in your Jira and
-Confluence inbox. 
+Confluence inbox.
 
 _Fun sidenote: Everything on Confluence goes to die._
 
@@ -34,7 +34,7 @@ Before: _Build a password check_
 
 After: _Build a password check, here are the acceptance criteria_. When the criteria are not met, the QA team
 can walk over to the devs with steps to reproduce. Ideally there's a test environment where you can reproduce
-the undefined behaviour. Once the bug can be reproduced, the ticket is now in "bug fixing stage". 
+the undefined behaviour. Once the bug can be reproduced, the ticket is now in "bug fixing stage".
 
 Step 2: Improve communication between developers and QA.
 

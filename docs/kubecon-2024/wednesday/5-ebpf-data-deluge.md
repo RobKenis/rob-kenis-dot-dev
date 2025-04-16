@@ -16,8 +16,8 @@ The _eBPF Verifier_ approves a program before it is compiled to run in the kerne
 
 ## Hook Points
 
-When defining a [Tetragon](https://tetragon.io/) `TracingPolicy`, you must define _hook points_, which defines on which actions the 
-eBPF program executes. 
+When defining a [Tetragon](https://tetragon.io/) `TracingPolicy`, you must define _hook points_, which defines on which actions the
+eBPF program executes.
 
 ## Observability
 
@@ -63,4 +63,3 @@ the aggragation can be done based on Kubernetes metadata, for example container 
 - <https://px.dev/>
 - <https://grafana.com/oss/beyla-ebpf/>
 - <https://tetragon.io/>
-

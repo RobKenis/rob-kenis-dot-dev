@@ -19,7 +19,7 @@ _Why do we care about events?_ We can build loosely coupled systems, scalability
 
 1. Implementation first
 
-Take some services of the shelf, this provides immediate value. And then reality hits, you get more producers, consumers and events, 
+Take some services of the shelf, this provides immediate value. And then reality hits, you get more producers, consumers and events,
 and this value plateaus. In the beginning, complexity is low, but over time the complexity rises.
 
 _How complexity grows_: The events has a `detail-type: <event-type>` field, the `source: <service.producer>` and the `detail: json<payload>` field.
@@ -34,7 +34,7 @@ but with events.
 
 2. Understand behavior first
 
-Understand the system, collaborate with domain experts, find events in your system and define language to use. Event storming is 
+Understand the system, collaborate with domain experts, find events in your system and define language to use. Event storming is
 a fantastic way to model your architecture into events. We can talk about things before writing a single line of code.
 
 A **Command** represents intent (CreateOrder), **Events** are immutable (OrderCreated), they are facts in your system that cannot be undone.
@@ -51,10 +51,10 @@ AWS_ with API destinations to integrate with legacy sytems.
 ## What goes into events
 
 A pitfall is that the consumer needs to communicate back to the producer to request more information. To resolve this, you can
-leverage the _Content Enricher Pattern_ to enrich events before they reach their destination. [EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html) 
+leverage the _Content Enricher Pattern_ to enrich events before they reach their destination. [EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html)
 can do transformations while handling events to do exactly that.
 
-Most brokers have limits on the message size they can produce. The _claim check pattern_ will do the following: raise an event, store the payload in S3, and the 
+Most brokers have limits on the message size they can produce. The _claim check pattern_ will do the following: raise an event, store the payload in S3, and the
 consumer can access the payload in S3.
 
 By consuming events as they are, you are a conformist by default. This domain model will get into your own domain. When you're in the same
@@ -65,7 +65,7 @@ working with conformist services, it's really really hard to change the structur
 ## Operation and Maintenance
 
 Complexity over time: questions that get raised over time include "What events to we have". If you're lucky, you'll find a README somewhere. The next question
-is "What is in the payload", followed by "Who is consuming this". Technically producers should not know about consumers, but this does not mean we can skip 
+is "What is in the payload", followed by "Who is consuming this". Technically producers should not know about consumers, but this does not mean we can skip
 governance. Think about standards first, then discoverability and communication.
 
 [CloudEvents](https://cloudevents.io/) recently graduated at CNCF. Wether you're using it or not, you should define some metadata and standards.

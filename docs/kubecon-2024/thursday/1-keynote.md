@@ -23,7 +23,7 @@ so ideal for aggressive scaling.
 - <https://github.com/KWasm/kwasm-operator>
 
 Instead of picking and configuring separate components to make WebAssembly work on Kubernetes, you can leverage tooling like
-[SpinKube](https://www.spinkube.dev/) for an out of the box ecosystem. SpinKube has been submitted to the CNCF. 
+[SpinKube](https://www.spinkube.dev/) for an out of the box ecosystem. SpinKube has been submitted to the CNCF.
 
 ## Top End Users
 

@@ -29,7 +29,7 @@ because nobody knows where the code runs.
 
 What do we need: Git and Pipelines
 
-Product selection: The company had already used ArgoCD. So the discussion boiled down to Argo Workflows or Tekton. 
+Product selection: The company had already used ArgoCD. So the discussion boiled down to Argo Workflows or Tekton.
 
 !!! quote "Argo is really really awesome, so we went with Tekton"
 

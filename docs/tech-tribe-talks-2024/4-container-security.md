@@ -2,7 +2,7 @@
 
 ## Why container security is hard
 
-The tools we have at hand are not container focused, they have a broader scope. In some cases, the culture in the company is wrong, 
+The tools we have at hand are not container focused, they have a broader scope. In some cases, the culture in the company is wrong,
 "including security makes our process slower", is still an (invalid) excuse. The other part is that you have to involve a lot
 of folks across different departments.
 
@@ -39,7 +39,7 @@ Rules of thumb:
 ## Culture
 
 Security is a responsibility of everyone in the organisation. Make everyone understand what the impact is, explain the "why are we doing this".
-Testing the application is not enough, you need to validate the platform that you're deploying on. 
+Testing the application is not enough, you need to validate the platform that you're deploying on.
 Introduce a DevSecOps process, sit together with all parties involved. Talk to eachother, because the dev people know how the application
 works and the ops people want it to be secure. If there's an exception, explain to eachother why it is an exception.
 
@@ -51,7 +51,7 @@ Get everybody involved from the beginning:
 ## The technical part
 
 Find a toolset that makes it easy for developers and ops to find issues. If your tooling is not helping, you're doing something wrong.
-_When using a tool, follow the guidelines of the vendor. You're not that special, use the tooling as intended._ 
+_When using a tool, follow the guidelines of the vendor. You're not that special, use the tooling as intended._
 Start with tools for scanning, your solution gets harder when introducing compliance. Get a container registry and scan images on every push.
 This gives confidence that you're in control of your environment.
 

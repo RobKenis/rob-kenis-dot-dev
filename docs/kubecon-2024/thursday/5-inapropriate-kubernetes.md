@@ -28,10 +28,10 @@ We know our final target, but this time: ambitions are differnt, personas change
 a more grown up approach where we build a town where everyone lives in.
 
 1. The platform owner: Give the user a well defined, flexible platform that is easy to use. It needs to scale horizontally.
-2. The Service Provider: You want to offer a service (as controllers). You need to handle requests from users in a consistent, 
+2. The Service Provider: You want to offer a service (as controllers). You need to handle requests from users in a consistent,
 efficient and safe manner. The set of tools has to work in a single region and in a multi-region setup. What about compute?
 Compute is just another API, it can be created with Crossplane, vcluster, KubeVirt or anything that provides compute.
-3. The user: As I user, I want to decide where my workloads can run, in which "workspace". It has to be easy to navigate, I 
+3. The user: As I user, I want to decide where my workloads can run, in which "workspace". It has to be easy to navigate, I
 don't want to manage 100 kubeconfigs.
 
 This is not default Kubernetes, we cannot build this platform by just creating more clusters.

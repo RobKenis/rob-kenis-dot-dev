@@ -42,7 +42,7 @@ Go to <https://github.com/cncf/llm-in-action>
 ## The conversation
 
 Ollama was designed in a way that we already know coming from Kubernetes and Docker. They've worked
-to build tooling that works for both developers and ops. 
+to build tooling that works for both developers and ops.
 15 years ago, developing in ML worked, but the landscape for deploying was completely different, no one
 was thinking about containers or Docker.
 
@@ -63,7 +63,7 @@ Customers are using Open Source models and are distributing them to their own cu
 you don't have to break them open to see how it works? Tools like PyTorch and compilers are Open Source and should stay
 that way, would we a shame if we have to switch hardware because a part in the toolchain become closed source.
 
-Hot take from Google: We should make the models and compilers open source. The only way to understand what some models can do, is 
+Hot take from Google: We should make the models and compilers open source. The only way to understand what some models can do, is
 to see people push the models to its boundaries.
 
 What can the open source community do? The models don't run in a vaccuum, so we need to find a way to bring observability, scaling, security
@@ -96,7 +96,7 @@ Dynamic Resource Allocation is an alpha feature since k8s 1.26, it's a way to cl
 
 Seems like a dope model for computer vision.
 
-To reliably run shared workloads across a shared-GPU cluster, we need to do some things in Kubernetes. There's some open source tooling to 
+To reliably run shared workloads across a shared-GPU cluster, we need to do some things in Kubernetes. There's some open source tooling to
 enhance scheduling, but these don't support GPUs yet.
 
 Scale out clusters need to interconnect thousands of GPUs. To schedule multi-node jobs, you need to be aware of 2 things:

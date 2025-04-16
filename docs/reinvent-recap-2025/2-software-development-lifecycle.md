@@ -16,12 +16,12 @@ _Let's see if this makes the service more fun to use, but it has passkeys, so lo
 
 ## Security
 
-[Security Incident Response](https://aws.amazon.com/security-incident-response/) gives you a direct line to AWS experts in security assistance. 
+[Security Incident Response](https://aws.amazon.com/security-incident-response/) gives you a direct line to AWS experts in security assistance.
 It will look at the events in Security Hub and run some automation to help you investigate your findings. **You're going to pay
 for it, but it's going to be worth it.** [GuardDuty Extended Thread Detection](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-extended-threat-detection.html)
 gives you some of the features, but for less of the price.
 
-[CloudFront VPC Origins](https://aws.amazon.com/blogs/aws/introducing-amazon-cloudfront-vpc-origins-enhanced-security-and-streamlined-operations-for-your-applications/) 
+[CloudFront VPC Origins](https://aws.amazon.com/blogs/aws/introducing-amazon-cloudfront-vpc-origins-enhanced-security-and-streamlined-operations-for-your-applications/)
 remove the need for public load balancers when hosting behind CloudFront.
 
 ### More on CloudFront

@@ -6,8 +6,8 @@ _Brough to you by [StackState](https://www.stackstate.com/)._
 
 First you need a Kubernetes cluster, then you need Observability.
 
-So we've created our cluster, deployed the frontend service, the user service, the order service, the catalogue service.. And then you start shipping and need to contact external services. Now we have a 
-multi-cluster problem. 
+So we've created our cluster, deployed the frontend service, the user service, the order service, the catalogue service.. And then you start shipping and need to contact external services. Now we have a
+multi-cluster problem.
 
 ## The Solution
 

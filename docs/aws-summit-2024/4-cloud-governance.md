@@ -64,7 +64,7 @@ the compliant services are whitelisted.
 ### Permissions Boundary
 
 This is a policy like any other in IAM, but it makes sure that all your actions stay within the boundary that the platform team defines. This makes
-sure that some resources are protected from tampering by the application teams. To make sure that the Permission Boundary is always applied, 
+sure that some resources are protected from tampering by the application teams. To make sure that the Permission Boundary is always applied,
 a Permission Boundary must be set on all `iam:CreateRole` actions.
 
 ### Corrective Controls
