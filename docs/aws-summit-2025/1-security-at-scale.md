@@ -77,3 +77,5 @@ you to propose remediation tasks for example.
 ## Links
 
 - <https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html>
+- <https://aws-experience.com/amer/smb/events/series/activation-days>
+- <https://workshops.aws/card/General%20Immersion%20Day>
