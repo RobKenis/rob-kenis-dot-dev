@@ -2,6 +2,9 @@ site_name: Notes
 repo_url: https://github.com/RobKenis/rob-kenis-dot-dev
 repo_name: RobKenis/rob-kenis-dot-dev
 
+site_description: Notes about conferences and trainings by Rob Kenis.
+site_url: https://robkenis.dev
+
 plugins:
   - search
   - git-revision-date-localized
@@ -9,6 +12,7 @@ plugins:
       prompt_literal_start:
         - "$"
         - ">"
+  - rss
 
 exclude_docs: |
   homelab/
