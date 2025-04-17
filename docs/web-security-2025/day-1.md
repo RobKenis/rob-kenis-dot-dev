@@ -120,3 +120,20 @@ Use <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content
 # Prefix with __Host, Set Secure and HTTPOnly, force SameSite and low MaxAge
 Set-cookie: __Host-SID=12345; Secure; SameSite=strict; Path=/; HTTPOnly; Max-Age=1800
 ```
+
+## CSRF
+
+- <https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html>
+
+Setting the `SameSite: none` attribute on cookies is insecure and must never be used. Use
+**lax** at least, ideally **strict**.
+
+Pay attention when receiving input data. When expecting `application/json` on a request on the server, don't even handle urlencoded form posts. **Do input validation!**
+
+> Enforce custom headers on all requests: this makes all requests non-simple and always triggers preflight requests.
+> The value does not matter, just validate that the header is present on the server side.
+
+## Unrelated notes
+
+- <https://developer.mozilla.org/en-US/docs/Web/Security/Subdomain_takeovers>
