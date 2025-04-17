@@ -16,6 +16,7 @@ plugins:
 
 exclude_docs: |
   homelab/
+  web-security-2025/
 
 theme:
   name: material
