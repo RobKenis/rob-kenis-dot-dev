@@ -78,12 +78,38 @@ user interaction.
 - Don't use OIDC implicit and resource owner password flow. Use authorization code and client credentials flow
   - Authorization code for users, client credentials for machine jobs
 - Use PKCE to validate that a started flow is finished by the same identity. _PKCE replaces the state parameter_
+- Never use the access_token in de frontend, don't decrypt it. We assume that it's a JWT, but there are not guarantees
 
 ## Security Token Service Deployment Models
 
 - SaaS like Okta and Auth0
 - Self-hosted like Keycloak
 - Middleware like IdentityServer
+
+## BFF
+
+Send cookies to BFF, BFF authenticates wit STS, so no tokens are exposed in frontend and no tokens can be accessed by JS.
+
+## Access Tokens
+
+There are self-contained tokens which contain full information and short tokens which contain a reference to the real information.
+With the reference token, you can introspect the token and retrieve the list of claims: <https://www.oauth.com/oauth2-servers/token-introspection-endpoint/>.
+
+Spring has built-in support for this: <https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/opaque-token.html>.
+
+The signature in self-contained tokens is created using the private key of the STS. Then the API can use the public
+key of the STS to validate that the JWT was signed by the STS.
+
+> Always always always validate the signature of the JWT!
+
+### Which token to use
+
+Reference tokens can be revoked at any time. When revoking the token, the introspection endpoint will immediately return `active: false`.
+Self-contained is more performant, since less network requests.
+
+The lifetime of a self-contained access token is until the token expires, there's no way to revoke this earlier.
+
+> Never ever ever cache reference tokens! Only for batch requests, but that's the only exception!
 
 ## Links
 
@@ -92,3 +118,5 @@ user interaction.
 - <https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce>
 - <https://developers.google.com/workspace/guides/configure-oauth-consent>
 - <https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/home-realm-discovery-policy>
+- <https://www.npmjs.com/package/auth0>
+- <https://curity.io/> and <https://docs.duendesoftware.com/bff/>
