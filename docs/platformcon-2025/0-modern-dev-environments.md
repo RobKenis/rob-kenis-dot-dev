@@ -23,3 +23,9 @@ When a developer and an AI agent operate on the same system, the developer has m
 systems and the development sandbox. The AI agent is more restricted on the actions it can do and the
 resources it can reach. _WHY IS THIS TALK ABOUT AI AGENTS?_ This talk was brough to you by
 [AI Agents](https://coder.com/solutions/ai-coding-agents).
+
+## Use cases for Coder
+
+_I would like if you would actually show something instead of trying to sell me AI agents, but whatever._
+Coder has a [Terraform Provider](https://registry.terraform.io/providers/coder/coder/latest/docs) which
+seems pretty nice to manage Coder Environments, with or without agents.
