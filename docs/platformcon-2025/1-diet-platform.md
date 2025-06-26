@@ -1,6 +1,6 @@
 # Putting your platform on a diet
 
-@@ What's the problem
+## What's the problem
 
 Platforms start out well, giving the necessary things, called **thinnest viable platform**. Over time,
 they evolve with more tools and become problematic. Every new addition can move the platform from helpful
