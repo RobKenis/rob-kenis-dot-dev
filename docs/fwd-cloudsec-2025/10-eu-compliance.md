@@ -33,3 +33,7 @@ We don't have answers right now. AWS is probably closest.
 - Don't use static credentials
 - Don't make things public
 - Document risk assesments
+
+## Links
+
+- <https://cloudsecurityalliance.org/blog/2022/04/22/four-ways-to-use-the-cloud-security-maturity-model>
