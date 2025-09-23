@@ -14,3 +14,18 @@ Yappa yappa yappa sales pitch.
 
 Assume all the layers of your AI application are compromized. From the prompt, to the context data to
 the systems used by AI Agents. Guardrails exist, but they're kind trash.
+
+When defending your AI landscape, take the 3 views into account:
+
+- Secure AI: Feeding sensitive data is the number 1 concern
+    - Eliminate shadow AI
+    - Control access to the API and the data
+    - Implement guardrails
+- AI for Security: AI can lower the time investigating an issue. It can be used to correlate data.
+- Defend against AIi: Attackers already weaponize AI. Multi-layer runtime detection is key.
+
+_aaaand here comes the sales pitch again._
+
+## Links
+
+- <https://owasp.org/www-project-top-10-for-large-language-model-applications/>
