@@ -17,6 +17,7 @@ plugins:
 exclude_docs: |
   homelab/
   web-security-2025/
+  LLM-SECURITY.md
 
 theme:
   name: material
