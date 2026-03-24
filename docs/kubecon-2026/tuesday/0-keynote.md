@@ -54,6 +54,25 @@ use the more recent flavors of Agentic AI.
 Ubers has a Kubernetes based control plane, managing a data plane consisting of Spark, PyTorch, TensorFlow and others.
 So the only thing the ML developers have to worry about is the machine learning.
 
+### Inference Scheduling at Wayve
+
+Wayve builds end to end AI for autonomous driving. They vehicles collects data of thousands of driving hours per day.
+At peak, they handle around 100k concurrent workloads. [Kueue](https://kueue.sigs.k8s.io/) is Kubernetes queueing system
+with some advanced features to enhance the Kubernetes scheduler. By using Kueue, the wait time for workloads went down
+and the utilization of the CPU cluster went up to reduce idle time.
+
+## EKS
+
+Very few teams using Kubernetes have to reinvent the wheel. Everyone is solving the same problem and can take solution
+out of the cncf landscape. [Karpenter](https://karpenter.sh/) is the node lifecycle manager for Kubernetes. Karpenter privsions
+the optimal instance in what's available.
+
+[kro](https://kro.run/docs/overview/) simplifies managent of resources by automatically creating CRDs based on a set
+of resources you need. Give developers simple building blocks and abstract away the hard parts.
+
+Kubernetes RBAC is great at telling _what_ something can do, but not to _which_ resource. [Cedar](https://www.cedarpolicy.com/blog/cedar-for-kubernetes)
+is a tool to build emission policies to say "actually...not to this resource".
+
 ## Links
 
 - <https://insights.linuxfoundation.org/>
