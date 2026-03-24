@@ -73,6 +73,12 @@ of resources you need. Give developers simple building blocks and abstract away 
 Kubernetes RBAC is great at telling _what_ something can do, but not to _which_ resource. [Cedar](https://www.cedarpolicy.com/blog/cedar-for-kubernetes)
 is a tool to build emission policies to say "actually...not to this resource".
 
+## Optimize Kubernetes for AI
+
+[Nvidia AI Cluster Runtime](https://aicr.dgxc.io/) provides a CLI and recipes to set up Kubernetes cluster optimized for
+AI workfloads. The more inputs you provide into the recipe, the more optimized the cluster will be. Once you have
+the recipe for the desired state of the cluster, you can create a bundle which can be deployed through Helm or ArgoCD.
+
 ## Links
 
 - <https://insights.linuxfoundation.org/>
