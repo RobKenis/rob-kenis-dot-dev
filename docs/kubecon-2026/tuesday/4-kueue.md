@@ -29,6 +29,8 @@ violation means that a tenant cannot use their guaranteed quota.
 Fragmentation is when the total amount of free resources is available to run the workload, but they are
 spread across multiple hosts, so the job is not able to run.
 
+Short spikes of violations are normal, long flat violations are abnormal.
+
 ## Links
 
 - <https://github.com/kubernetes-sigs/jobset>
