@@ -53,3 +53,12 @@ A decade ago, Heroku defined the <https://12factor.net/>. This framework gives g
 can define good consumer citizens. The platform still needs to define a good producer citizen.
 <https://github.com/Cloud-Native-Platform-Engineering/cnpe-community> is the first iteration of defining
 good platform producers.
+
+## Kubernetes for Accelerated Workloads
+
+For developers, it's all about velocity. Kubernetes can provde velocity and scaling without much intervention.
+Platform teams can provide efficiency, but the ecosystem is where it really happens.
+
+In the journey of making Kubernetes the OS layer, the fist step with DRA is already semi-finished. The next
+step with [Workload Aware Scheduling](https://kubernetes.io/blog/2025/12/29/kubernetes-v1-35-introducing-workload-aware-scheduling/)
+will optimize this further. _Please let this be the end of Airflow._
