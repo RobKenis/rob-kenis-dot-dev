@@ -62,3 +62,14 @@ Platform teams can provide efficiency, but the ecosystem is where it really happ
 In the journey of making Kubernetes the OS layer, the fist step with DRA is already semi-finished. The next
 step with [Workload Aware Scheduling](https://kubernetes.io/blog/2025/12/29/kubernetes-v1-35-introducing-workload-aware-scheduling/)
 will optimize this further. _Please let this be the end of Airflow._
+
+## DX to AX
+
+The next decade of Netlify will see a shift from Developer Experience to Agent Experience. Builders are pushing out
+frontend sites with a gradient at record pace.
+Netlify built the infrastructure already to integrate well with Agents.
+
+## Links
+
+- <https://kpt.dev/>
+- <https://docs.sdcio.dev/>
