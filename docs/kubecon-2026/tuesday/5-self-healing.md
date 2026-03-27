@@ -1,4 +1,4 @@
-# Alert Fatigue to Self Headling
+# Alert Fatigue to Self Healing
 
 ## The Promise
 
